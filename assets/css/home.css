@@ -19,6 +19,7 @@ html {
 }
 
 body {
+    font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -43,13 +44,25 @@ a {
     color: #fff;
 }
 
-/* -------------------------Navbar----------------------------- */
-#navbar {
-    background-color: #FFFCF4;
-    padding-top: 36px;
+.btn:hover {
+    opacity: 0.8;
 }
 
-nav {
+/* -------------------------Navbar----------------------------- */
+header {
+    background-color: #FFFCF4;
+    padding-top: 36px;
+    padding-bottom: 7px;
+}
+
+/* Position sticky */
+.fixed {
+    position: sticky;
+    top: -29px;
+    z-index: 100;
+}
+
+header .box {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -61,46 +74,37 @@ a.logo {
 }
 
 /* Menu */
-ul.main-mennu {
+ul.main-menu {
     display: flex;
-    margin-right: 70px;
+    margin-right: 49px;
 }
 
-ul.main-mennu li {
-    margin: 0px 11px;
-    padding: 0px 10px;
-}
-
-ul.main-mennu li a {
+ul.main-menu li a {
     color: var(--primary-text-color);
-    font-size: 1.6rem;
     font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0em;
+    padding: 8px 21px;
 }
 
-ul.main-mennu li:first-child a {
+ul.main-menu li a.active {
     position: relative;
-    font-size: 1.6rem;
     font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 0em;
     color: #171100;
 
 }
 
-ul.main-mennu li:first-child a::before {
+ul.main-menu li a.active::before {
     position: absolute;
+    left: 21px;
+    bottom: 6px;
     display: block;
     content: "";
     width: 12px;
     height: 2px;
     border-radius: 1px;
     background-color: #171100;
-    bottom: -4px;
 }
 
-ul.main-mennu li:not(:first-child) a:hover {
+ul.main-menu li a:not(a.active):hover {
     text-shadow: 1px 0px 0px;
     color: #171100;
 }
@@ -108,7 +112,6 @@ ul.main-mennu li:not(:first-child) a:hover {
 /* Sign-up */
 .form-register {
     background-color: #171100;
-    font-size: 1.6rem;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: 0em;
@@ -120,64 +123,76 @@ ul.main-mennu li:not(:first-child) a:hover {
 /* ---------------------------Hero---------------------------- */
 #hero {
     background-color: #FFFCF4;
-    padding: 64px 0px 65px;
+    padding: 57px 0px 65px;
 }
 
-#hero .container {
+#hero .box {
     display: flex;
     justify-content: space-between;
+}
+
+#hero .box div.pic {
     position: relative;
-
-
+    height: 685px;
 }
 
 /*------------------------- Courses Pic-----------------------  */
 
-.courses {
+.hero-courses {
     display: flex;
-    width: 270px;
-    height: 244px;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
-    left: 26%;
-    bottom: 6%;
+    left: 64%;
+    bottom: 15%;
     background-color: #fff;
     box-shadow: 0px 16px 32px 0px #0000000D;
     padding: 24px 0px;
+    padding-left: 24px;
+    padding-right: 59px;
     border-radius: 12px;
 }
 
-.courses .column-pic {
+.courses {
     display: flex;
-    flex-direction: column;
-    margin-right: 16px;
-}
-
-.courses .column-pic img {
-    margin: 9px;
-}
-
-.courses .column-pic img:first-of-type {
-    margin-top: 0px;
-}
-
-.courses .column-title .title:not(:first-of-type) {
+    align-items: center;
     margin: 7px 0px;
 }
 
-.courses .column-title .title p {
+.courses:first-of-type {
+    margin-top: 0px;
+}
+
+.courses:last-of-type {
+    margin-bottom: 0px;
+}
+
+.courses img {
+    width: 48px;
+    height: 48px;
+}
+
+.courses .substance {
+    margin-left: 16px;
+}
+
+.courses .substance p.title {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 26px;
-
+    color: var(--primary-text-color);
 }
 
-.courses .column-title .title strong {
+.courses .substance strong.title {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 30px;
 }
 
 /* -----------------------DESC------------------------------ */
+.desc {
+    padding-top: 64px;
+}
 
 .desc h1.title {
     width: 470px;
@@ -189,7 +204,7 @@ ul.main-mennu li:not(:first-child) a:hover {
     color: var(--heading-color);
 }
 
-.desc p.title {
+.desc>p.title {
     margin: 22px 0px 38px;
     width: 470px;
     font-size: 1.8rem;
@@ -225,7 +240,7 @@ ul.main-mennu li:not(:first-child) a:hover {
     align-items: center;
 }
 
-.see-courses .watch-video div.icon {
+.see-courses .watch-video a.icon {
     display: flex;
     width: 40px;
     height: 40px;
@@ -234,7 +249,7 @@ ul.main-mennu li:not(:first-child) a:hover {
     border-radius: 50%;
 }
 
-.see-courses .watch-video div.icon img {
+.see-courses .watch-video .icon img {
     width: 12px;
     height: 12px;
     margin: auto;
@@ -256,8 +271,9 @@ ul.main-mennu li:not(:first-child) a:hover {
 .desc .recent p.title {
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 30px;
     color: var(--primary-text-color);
+    margin-bottom: 8px;
+    line-height: 30px;
 
 }
 
