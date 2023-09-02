@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #5F5B53;
+    --primary-color: #FFB900;
+    --heading-fonts: 'Sen', sans-serif;
+    --heading-color: #171100;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 24px);
+    margin: 0px auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 144px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    padding: 11px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+/* -------------------------Navbar----------------------------- */
+#navbar {
+    background-color: #FFFCF4;
+    padding-top: 36px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Logo */
+a.logo {
+    margin-right: auto;
+}
+
+/* Menu */
+ul.main-mennu {
+    display: flex;
+    margin-right: 70px;
+}
+
+ul.main-mennu li {
+    margin: 0px 11px;
+    padding: 0px 10px;
+}
+
+ul.main-mennu li a {
+    color: var(--primary-text-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+
+ul.main-mennu li:first-child a {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #171100;
+
+}
+
+ul.main-mennu li:first-child a::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #171100;
+    bottom: -4px;
+}
+
+ul.main-mennu li:not(:first-child) a:hover {
+    text-shadow: 1px 0px 0px;
+    color: #171100;
+}
+
+/* Sign-up */
+.form-register {
+    background-color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+/* --------------------------End Navabar------------------------ */
+/* ---------------------------Hero---------------------------- */
+#hero {
+    background-color: #FFFCF4;
+    padding: 64px 0px 65px;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+
+/*------------------------- Courses Pic-----------------------  */
+
+.courses {
+    display: flex;
+    width: 270px;
+    height: 244px;
+    position: absolute;
+    left: 26%;
+    bottom: 6%;
+    background-color: #fff;
+    box-shadow: 0px 16px 32px 0px #0000000D;
+    padding: 24px 0px;
+    border-radius: 12px;
+}
+
+.courses .column-pic {
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+}
+
+.courses .column-pic img {
+    margin: 9px;
+}
+
+.courses .column-pic img:first-of-type {
+    margin-top: 0px;
+}
+
+.courses .column-title .title:not(:first-of-type) {
+    margin: 7px 0px;
+}
+
+.courses .column-title .title p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.courses .column-title .title strong {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+/* -----------------------DESC------------------------------ */
+
+.desc h1.title {
+    width: 470px;
+    font-family: var(--heading-fonts);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: -0.02em;
+    color: var(--heading-color);
+}
+
+.desc p.title {
+    margin: 22px 0px 38px;
+    width: 470px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--primary-text-color);
+
+}
+
+/* See-courses */
+.desc .see-courses {
+    display: flex;
+    align-items: center;
+}
+
+/* See courses Button */
+.desc .see-courses a.sc-cta {
+    min-width: 180px;
+    padding: 17px 0px;
+    margin-right: 28px;
+    border-radius: 32px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+}
+
+/* See courses watch-video */
+.see-courses .watch-video {
+    display: flex;
+    align-items: center;
+}
+
+.see-courses .watch-video div.icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 16px 0px #00000012;
+    border-radius: 50%;
+}
+
+.see-courses .watch-video div.icon img {
+    width: 12px;
+    height: 12px;
+    margin: auto;
+}
+
+.see-courses .watch-video .video {
+    padding-left: 14px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+    color: #171100;
+}
+
+/* Recent */
+.recent {
+    margin-top: 48px;
+}
+
+.desc .recent p.title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--primary-text-color);
+
+}
+
+.recent div.row {
+    display: flex;
+}
+
+.recent div.title {
+    margin: 0px 14px;
+}
+
+.recent div.title strong {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: var(--heading-fonts);
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 54px;
+    color: var(--heading-color);
+
+}
+
+.recent div.title span {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: var(--primary-text-color);
+}
+
+/* ----------------------------End Hero----------------------- */
