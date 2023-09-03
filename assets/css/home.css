@@ -136,6 +136,13 @@ ul.main-menu li a:not(a.active):hover {
     height: 685px;
 }
 
+#hero .box div.pic>img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 /*------------------------- Courses Pic-----------------------  */
 
 .hero-courses {
@@ -144,7 +151,7 @@ ul.main-menu li a:not(a.active):hover {
     flex-direction: column;
     position: absolute;
     left: 64%;
-    bottom: 15%;
+    bottom: 6%;
     background-color: #fff;
     box-shadow: 0px 16px 32px 0px #0000000D;
     padding: 24px 0px;
@@ -304,3 +311,168 @@ ul.main-menu li a:not(a.active):hover {
 }
 
 /* ----------------------------End Hero----------------------- */
+/* ==========================Content====================== */
+/* -----------------------Popular-------------------- */
+#popular-courses {
+    padding: 200px 0px;
+}
+
+/* Top */
+#popular-courses .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+#popular-courses .substance h2.title {
+    font-family: var(--heading-fonts);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: var(--heading-color);
+    margin-bottom: 16px;
+}
+
+#popular-courses .substance>p.title {
+    width: 458px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--primary-text-color);
+
+}
+
+/* Icon */
+#popular-courses .box-icon {
+    display: flex;
+}
+
+#popular-courses .box-icon .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 0px 9px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background: #fff;
+    color: var(--primary-color);
+}
+
+#popular-courses .box-icon .icon:first-child {
+    margin-left: 0px;
+}
+
+#popular-courses .box-icon .icon:last-child {
+    margin-right: 0px;
+}
+
+#popular-courses .box-icon .icon:hover {
+    background-color: var(--primary-color);
+}
+
+#popular-courses .box-icon .icon:hover svg {
+    color: #fff;
+}
+
+/* Menu */
+#popular-courses ul.courses-menu {
+    display: flex;
+}
+
+ul.courses-menu li {
+    margin: 0px 15px;
+    width: 370px;
+}
+
+ul.courses-menu li:first-of-type {
+    margin-left: 0px;
+}
+
+ul.courses-menu li:last-of-type {
+    margin-right: 0px;
+}
+
+ul.courses-menu li>a,
+ul.courses-menu li>a>img {
+    display: block;
+    width: 100%;
+}
+
+ul.courses-menu li div.column {
+    padding: 0px 22px 22px;
+    border: 1px solid #E2DFDA;
+    border-radius: 0px 0px 12px 12px;
+}
+
+ul.courses-menu li div.column:hover {
+    box-shadow: 0px 18px 36px 0px #0000000D;
+    border: 1px solid transparent;
+    border-radius: 0px 0px 12px 12px;
+}
+
+ul.courses-menu li div.column div.row {
+    display: flex;
+    padding-top: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.courses-menu li div.column h3.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+ul.courses-menu li div.column h3.title a {
+    color: var(--heading-color);
+    transition: 0.25s ease-in-out;
+}
+
+ul.courses-menu li div.column h3.title:hover a {
+    color: var(--primary-color);
+}
+
+ul.courses-menu li div.column p.title {
+    width: 326px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--primary-text-color);
+    margin: 6px 0px 12px;
+}
+
+ul.courses-menu li div.column div.column-price {
+    display: flex;
+    align-items: center;
+}
+
+ul.courses-menu li div.column span.price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--heading-color);
+}
+
+ul.courses-menu li div.column a.popular-cta {
+    display: inline-block;
+    min-width: 118px;
+    background: #171100;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 28px;
+    margin-left: 139px;
+    transition: 0.25s ease-in-out;
+}
+
+ul.courses-menu li div.column a.popular-cta:hover {
+    background-color: var(--primary-color);
+    opacity: 1;
+}
+
+/* ----------------------ENd popular-------------------- */
+/* ==========================End Content=================== */
