@@ -216,7 +216,7 @@ ul.main-menu li a:not(a.active):hover {
     padding-top: 64px;
 }
 
-.desc h1.title {
+#hero .desc h1.title {
     width: 470px;
     font-family: var(--heading-fonts);
     font-size: 5.8rem;
@@ -226,7 +226,7 @@ ul.main-menu li a:not(a.active):hover {
     color: var(--heading-color);
 }
 
-.desc>p.title {
+#hero .desc>p.title {
     margin: 22px 0px 38px;
     width: 470px;
     font-size: 1.8rem;
@@ -239,7 +239,7 @@ ul.main-menu li a:not(a.active):hover {
 }
 
 /* See-courses */
-.desc .see-courses {
+#hero .desc .see-courses {
     display: flex;
     align-items: center;
 }
@@ -589,4 +589,287 @@ ul.courses-menu li div.column a.popular-cta:hover {
 }
 
 /* ------------------------End Evaluate---------------- */
+/* -------------------------Result----------------------- */
+#result {
+    padding: 200px 0 100px;
+
+}
+
+#result .box-result {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#result .box-pic {
+    display: flex;
+    height: 438px;
+}
+
+#result .box-pic .pic {
+    width: 270px;
+
+}
+
+#result .box-pic .pic img {
+    width: 270px;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+#result .box-pic .pic:first-child {
+    padding-top: 34px;
+}
+
+#result .box-pic .pic+.pic {
+    margin-left: 30px;
+}
+
+#result .desc h2.title {
+    width: 470px;
+    max-width: 100%;
+    font-family: var(--heading-fonts);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: var(--heading-color);
+
+}
+
+#result .desc p.substance {
+    width: 458px;
+    max-width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--primary-text-color);
+    margin: 16px 0px;
+}
+
+#result .desc p.substance-2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 32px;
+    color: var(--primary-text-color);
+}
+
+#result .desc a.result-cta {
+    border-radius: 26px;
+    width: 137px;
+    padding: 17px 0px;
+    display: inline-block;
+}
+
+/* ------------------------End result----------------------- */
+/* -------------------------Join-now----------------------- */
+#join-now {
+    padding: 100px 0 200px;
+}
+
+#join-now .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#join-now .desc {
+    width: 49%;
+}
+
+#join-now .desc h2.title {
+    font-family: var(--heading-fonts);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: var(--heading-fonts);
+}
+
+#join-now .desc p.title {
+    margin: 16px 0 32px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--primary-text-color);
+}
+
+#join-now .desc a.jn-cta {
+    width: 137px;
+    padding: 17px 0px;
+    border-radius: 26px;
+}
+
+#join-now .pic {
+    width: 470px;
+    height: 440px;
+}
+
+#join-now .pic img {
+    min-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* ------------------------End Join-now-------------------- */
+/* -------------------------Blog-------------------------- */
+#blog {
+    background-color: #FFFCF4;
+    padding: 96px 0px;
+}
+
+#blog .our-blog {
+    width: 448px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+#blog .our-blog h2.title {
+    font-family: var(--heading-fonts);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: var(--heading-fonts);
+    text-align: center;
+}
+
+#blog .our-blog p.title {
+    margin: 16px 0 55px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+#blog .box-menu {
+    display: flex;
+    overflow: hidden;
+}
+
+#blog ul.blog-menu {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    gap: 0 30px;
+}
+
+#blog ul.blog-menu li {
+    width: 31.6%;
+}
+
+#blog ul.blog-menu a.pic {
+    display: inline-block;
+    height: 250px;
+}
+
+
+#blog ul.blog-menu a.pic img {
+    width: 369.71px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+#blog ul.blog-menu li .substance {
+    background-color: #fff;
+    padding: 20px 20px 28px;
+    border-radius: 0px 0px 16px 16px;
+}
+
+#blog ul.blog-menu a.pic:hover+.substance,
+#blog ul.blog-menu li .substance:hover {
+    box-shadow: 0px 16px 32px 0px #0000000D;
+    border-radius: 0px 0px 16px 16px;
+}
+
+#blog ul.blog-menu li .substance p.date {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--primary-text-color);
+    margin-bottom: 25px;
+}
+
+#blog ul.blog-menu li .substance p.date::before {
+    margin-right: 4px;
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+#blog ul.blog-menu li .substance p.title {
+    position: relative;
+    width: 330px;
+    max-width: 100%;
+    color: var(--heading-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 12px;
+}
+
+#blog ul.blog-menu li .substance p.title a {
+    display: block;
+}
+
+#blog ul.blog-menu li .substance p.title::before {
+    top: -12px;
+    position: absolute;
+    display: inline-block;
+    content: " ";
+    width: 160px;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #E2DFDA;
+}
+
+#blog ul.blog-menu li .substance>a.blog-cta {
+    min-width: 118px;
+    padding: 17px 0px;
+    background-color: var(--heading-color);
+    transition: 0.25s ease-in-out;
+}
+
+#blog ul.blog-menu li .substance>a.blog-cta:hover {
+    background-color: var(--primary-color);
+}
+
+#blog ul.blog-menu li .substance>a.blog-cta:hover {
+    background-color: var(--primary-color);
+}
+
+#blog .dotted {
+    margin-top: 38px;
+}
+
+#blog .dotted {
+    text-align: center;
+}
+
+#blog .dotted span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #5F5B53;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#blog .dotted span:hover {
+    background-color: var(--primary-color);
+}
+
+#blog .dotted span.active {
+    background-color: var(--primary-color);
+}
+
+/* -------------------------End Blog----------------------- */
 /* ==========================End Content=================== */
