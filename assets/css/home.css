@@ -592,7 +592,6 @@ ul.courses-menu li div.column a.popular-cta:hover {
 /* -------------------------Result----------------------- */
 #result {
     padding: 200px 0 100px;
-
 }
 
 #result .box-result {
@@ -824,11 +823,11 @@ ul.courses-menu li div.column a.popular-cta:hover {
     top: -12px;
     position: absolute;
     display: inline-block;
-    content: " ";
+    content: "";
     width: 160px;
     height: 1px;
-    border-radius: 1px;
-    background-color: #E2DFDA;
+    border-radius: 0.5px;
+    background: #E2DFDA;
 }
 
 #blog ul.blog-menu li .substance>a.blog-cta {
@@ -874,14 +873,17 @@ ul.courses-menu li div.column a.popular-cta:hover {
 /* -------------------------End Blog----------------------- */
 /* ==========================End Content=================== */
 /* ==========================Footer============================ */
+/* ------------------------Top-footer------------------------------ */
 #footer {
     background-color: #2E2100;
-    padding: 96px 28px;
+    padding: 96px 0 28px;
 }
 
 .top-footer {
+    padding-bottom: 38px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #59554B;
 }
 
 .top-footer .logo a {
@@ -963,5 +965,16 @@ ul.footer-menu li:last-of-type {
     line-height: 185.714%;
 }
 
-/* ------------------------Top-footer */
+/* ----------------------End Top-Footer--------------------------- */
+/* ----------------------Copyright------------------------------- */
+p.copyright {
+    margin-top: 28px;
+    color: #807D74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%;
+}
+
+/* -----------------------Copyright------------------------------- */
 /* =========================End Footer========================= */
