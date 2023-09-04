@@ -212,7 +212,7 @@ ul.main-menu li a:not(a.active):hover {
 }
 
 /* -----------------------DESC------------------------------ */
-.desc {
+#hero .desc {
     padding-top: 64px;
 }
 
@@ -503,7 +503,16 @@ ul.courses-menu li div.column a.popular-cta:hover {
 
 #evaluate .box {
     display: flex;
+    overflow: hidden;
+}
+
+#evaluate .box-evaluate {
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
     align-items: center;
+    transform: translateX(-100%);
+    transition: all ease 0.25s;
 }
 
 /* Student */
@@ -545,11 +554,19 @@ ul.courses-menu li div.column a.popular-cta:hover {
     height: 6px;
     background: #634700;
     border-radius: 50%;
+    cursor: pointer;
 }
+
 
 #evaluate .student .dotted span:hover {
     background: var(--primary-color);
 }
+
+#evaluate .student .dotted span.active {
+    background-color: var(--primary-color);
+    cursor: default;
+}
+
 
 #evaluate .student .dotted span+span {
     margin-left: 6px;
