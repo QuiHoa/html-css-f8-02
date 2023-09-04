@@ -418,6 +418,10 @@ ul.courses-menu li>a>img {
     width: 100%;
 }
 
+ul.courses-menu li>a>img {
+    object-fit: cover;
+}
+
 ul.courses-menu li div.column {
     padding: 0px 22px 22px;
     border: 1px solid #E2DFDA;
@@ -491,4 +495,81 @@ ul.courses-menu li div.column a.popular-cta:hover {
 }
 
 /* ----------------------ENd popular-------------------- */
+/* -----------------------Evaluate------------------ */
+#evaluate {
+    background-color: #2E2100;
+    padding: 96px 0px;
+}
+
+#evaluate .box {
+    display: flex;
+    align-items: center;
+}
+
+/* Student */
+#evaluate .student .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+#evaluate .student .avatar img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#evaluate .student .name {
+    padding: 18px 0px 4px;
+    font-family: var(--heading-fonts);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 34px;
+    color: #F7F7F7;
+
+}
+
+#evaluate .student .position {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+    color: #BFBCB2;
+    margin-bottom: 28px;
+}
+
+#evaluate .student .dotted span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #634700;
+    border-radius: 50%;
+}
+
+#evaluate .student .dotted span:hover {
+    background: var(--primary-color);
+}
+
+#evaluate .student .dotted span+span {
+    margin-left: 6px;
+}
+
+/* Desc */
+#evaluate .desc {
+    margin-left: 241px;
+}
+
+#evaluate .desc p.substance {
+    margin-left: 30px;
+    width: 740px;
+    max-width: 100%;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 40px;
+    color: #fff;
+}
+
+/* ------------------------End Evaluate---------------- */
 /* ==========================End Content=================== */
