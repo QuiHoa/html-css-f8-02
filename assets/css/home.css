@@ -813,8 +813,7 @@ ul.courses-menu li div.column a.popular-cta:hover {
     background: #E2DFDA;
 }
 
-#blog ul.blog-menu li .substance p.title {
-    position: relative;
+#blog ul.blog-menu li .substance h3.title {
     width: 330px;
     max-width: 100%;
     color: var(--heading-color);
@@ -822,6 +821,15 @@ ul.courses-menu li div.column a.popular-cta:hover {
     font-weight: 600;
     line-height: 28px;
     margin-bottom: 12px;
+    cursor: pointer;
+}
+
+#blog ul.blog-menu li .substance h3.title a {
+    transition: ease-in-out 0.25s;
+}
+
+#blog ul.blog-menu li .substance h3.title:hover a {
+    color: var(--primary-color);
 }
 
 #blog ul.blog-menu li .substance p.title a {
@@ -831,7 +839,8 @@ ul.courses-menu li div.column a.popular-cta:hover {
 
 #blog ul.blog-menu li .substance>a.blog-cta {
     min-width: 118px;
-    padding: 17px 0px;
+    font-size: 1.4rem;
+    padding: 18px 0px;
     background-color: var(--heading-color);
     transition: 0.25s ease-in-out;
 }
@@ -923,7 +932,7 @@ ul.footer-menu li:last-of-type {
     width: 239px;
 }
 
-.top-footer ul.footer-menu li a:first-of-type {
+.top-footer ul.footer-menu li h3.title {
     color: #FFF;
     font-size: 1.6rem;
     font-weight: 600;
@@ -932,7 +941,7 @@ ul.footer-menu li:last-of-type {
     margin-bottom: 28px;
 }
 
-.top-footer ul.footer-menu li a:first-of-type::after {
+.top-footer ul.footer-menu li h3.title::after {
     margin-top: 14px;
     content: "";
     display: block;
@@ -941,7 +950,7 @@ ul.footer-menu li:last-of-type {
     background-color: #59554B;
 }
 
-.top-footer ul.footer-menu li a:not(:first-of-type) {
+.top-footer ul.footer-menu li a {
     display: block;
     color: #BFBCB2;
     font-size: 1.4rem;
@@ -949,11 +958,11 @@ ul.footer-menu li:last-of-type {
     line-height: 185.714%;
 }
 
-.top-footer ul.footer-menu li a:not(:first-of-type):hover {
+.top-footer ul.footer-menu li a:hover {
     text-decoration: underline;
 }
 
-.top-footer ul.footer-menu li a:not(:first-of-type)+a:not(:first-of-type) {
+.top-footer ul.footer-menu li a+a {
     margin-top: 12px;
 }
 
